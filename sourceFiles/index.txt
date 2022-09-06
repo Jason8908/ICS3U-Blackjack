@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- 
+	Jason, Fahad, Elben and Lily
+	11/15/2019
+	Black Jack 
+	This is our game.
+ -->
+<html>
+	<head>
+		<title>Black Jack!</title>
+		<link rel="stylesheet" type="text/css" href="styles/
+		stylesHome.css">
+		<link rel="icon" type="image/ico" href="assets/images/icon.png" />
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  		<script type="text/javascript" src="javascript/code.js"></script>
+  		<audio id="themeSong" preload="auto" oncanplaythrough="loadComp()">
+  			<source src="assets/music/musicTheme.mp3" type="audio/mpeg">
+  		</audio>
+	</head>
+	<body>
+		<!-- Menu Bar -->
+		<nav>
+			<ul>
+				<li><a class="active" href="index.html">Home</a></li>
+				<li style="float:right"><a href="">Resource</a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">About</a>
+					<div class="dropdown-content">
+						<a href="about/description.html">Description</a>
+						<a href="about/rules.html">Rules</a>
+						<a href="about/instructionsAndScreenshots.html">Instructions/Screenshots</a>
+						<a href="about/documentation.html">Documentation</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<!-- Menu bar Ends -->
+		<img src="assets/images/logo7.png" id="logoImage" srcset="assets/images/logo7.png 500w">
+		<br>
+		<div class="bgm">
+			Toxic Music:
+			<input type="button" value="On" id="on" class="toxicMusic">
+			<input type="button" value="Off" id="off" class="toxicMusic">
+			<label id="lblLoad">Loading...</label>
+		</div>
+		<button class="button" id="playButton" >
+			<span>
+				<a href="play/index.html">Play Now!</a>
+			</span>
+		</button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="div">
+			<p> 
+				Blackjack, otherwise known as patience. Set in a pristine unspoilt lakeside retreat. Just chill!!!<br> 
+				Be sure to read ALL the rules!
+				<br>
+				<br>
+				DISCLAIMER: the music is toxic, play at your own risk (referring to the main webpage music, the game music is lit).
+			</p>
+		</div>
+	</body>
+</html>

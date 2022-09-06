@@ -1,0 +1,91 @@
+<!-- 
+	Jason, Fahad, Elben and Lily
+	11/15/2019
+	Black Jack 
+	These are the rules of the game
+ -->
+<html>
+	<head>
+		<title> Rules </title>
+		<link rel="stylesheet" type="text/css" href="../styles/styles2.css">
+		<link rel="icon" type="image/ico" href="../assets/images/icon.png" />
+	</head>
+	<body>
+		<!-- Menu Bar -->
+		<nav>
+			<ul>
+				<li><a class="active" href="../index.html">Home</a></li>
+				<li style="float:right"><a href="">Resource</a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">About</a>
+					<div class="dropdown-content">
+						<a href="description.html">Description</a>
+						<a href="rules.html">Rules</a>
+						<a href="instructionsAndScreenshots.html">Instructions/Screenshots</a>
+						<a href="documentation.html">Documentation</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<!-- Menu Bar Ends -->
+		<br>
+		<img src="../assets/images/rulesPic.jpg" id="rulesPic">
+		<br>
+		<br>
+		<div class="paragraph">
+			<h1 style="text-align: center;"> Rules! </h1>
+			<h2> Betting </h2>
+			<p>
+				The player may only be dealt their cards when they have placed their bet. The player's bet can not pass the amount of money they currently have. Once the bet has been made the computer will match the bet and the cards may be dealt.
+			</p>
+			<br>
+			<h2> Dealing </h2>
+			<p>
+				The player and the computer will be dealt two cards. The player will only be able to see their own cards and the computer's highest card. Once the player is dealt their cards they are able to choose whether to hit, double or stay.
+			</p>
+			<br>
+			<h2> Hit </h2>
+			<p>
+				The player can choose to be hit with another card if they are unsastified with their total sum. The player can choose however many times they would like to hit as long as their total sum doesn't pass 21 which would be an automatic lose. (Bust rule also applies to the dealer)
+			</p>
+			<br>
+			<h2> Stay </h2>
+			<p>
+				The player can choose to stay if they are sastified with their total sum or wish to play it safe and not take the risk. 
+			</p>
+			<br>
+			<h2> Double </h2>
+			<p>
+				If the player is feeling confident in their hand then they may choose to double their bettings. DO NOT CLICK THE DOUBLE BUTTON IF YOU DON'T HAVE ENOUGH MONEY (YOU HAVE BEEN WARNED).
+			</p>
+			<br>
+			<h2> Card value </h2>
+			<p>
+				Each card has its value in terms of points. 
+				<br>
+				<br>
+				Ace = 1 point
+				<br>
+				2-10 = the point value on the card
+				<br>
+				J, Q, K = worth 10 points
+				<br>
+				(Jokers are not present in the game)
+			</p>
+			<h2> Winning the bet </h2>
+			<p>
+				The player wins the bet by their oponent going over the total of 21 points or being the closer person to the total of 21 points. If the player wins the bet then they will recieve double the amount that they placed as their bet.
+			</p>
+			<br>
+			<h2> Losing the bet </h2>
+			<p>
+				The player loses the bet either by their total amount of points passes 21 or their oponent is closer to the total of 21 points. If the player loses the bet they will lose the money they placed as their bet.
+			</p>
+			<br>
+			<h2> Tieing the bet </h2>
+			<p>
+				In the case of a tie the player neither gains nor loses any money. Their betted money is simply returned to them.
+			</p>
+		</div>
+	</body>
+</html>

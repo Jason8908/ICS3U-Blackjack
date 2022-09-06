@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- 
+	Jason, Fahad, Elben and Lily
+	11/15/2019
+	Black Jack 
+	This is the html file of our game blackjack.
+ -->
+<html>
+	<head>
+		<title>Black Jack!</title>
+		<link rel="stylesheet" type="text/css" href="../styles/styles.css">
+		<link rel="icon" type="image/ico" href="../assets/images/icon.png" />
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  		<script type="text/javascript" src="../javascript/game.js"></script>
+  		<!-- Loading Audio -->
+  		<audio id="backgroundMusic" preload="auto">
+  			<source src="../assets/music/backgroundMusic.mp3" type="audio/mpeg">
+  		</audio>
+  		<audio id="winSound" preload="auto">
+  			<source src="../assets/music/winSound.mp3" type="audio/mpeg">
+  		</audio>
+  		<audio id="backgroundMusicWin" preload="auto">
+  			<source src="../assets/music/christmasMusic.mp3" type="audio/mpeg">
+  		</audio>
+  		<audio id="noMoneySound" preload="auto">
+  			<source src="../assets/music/ErrorSound.mp3" type="audio/mpeg">
+  		</audio>
+  		<audio id="wahSound" preload="auto">
+  			<source src="../assets/music/wahSound.mp3" type="audio/mpeg">
+  		</audio>
+  		<audio id="scareSound" preload="auto">
+  			<source src="../assets/music/scareSound.mp3" type="audio/mpeg">
+  		</audio>
+  		<audio id="loseSound" preload="auto">
+  			<source src="../assets/music/loseSound.mp3" type="audio/mpeg">
+  		</audio>
+  		<!-- Audio Loading Ends -->
+	</head>
+	<body>
+		<!--Play sgsin when the player lose-->
+		<div id="divOverlay">
+			<div id="divPlayAgain">
+				<input type="button" id="btnPlayAgain" value="Play Again">
+				<br>
+				<br>
+			</div>
+			<div id="divSettings">
+				<h2 id="h2Settings">Enter Your Name</h2>
+				<input type="text" id="txtName">
+				<br>
+				<br>
+				<input type="button" id="btnNameEnt" value="Enter">
+			</div>
+		</div>
+		<!--End of play again-->
+		<!--Scary???-->
+		<img id="imgScare" src="../assets/images/boo.png">
+		<!-- Main game -->
+		<div id="mainGame">
+			<div class="container">
+				<!-- Deal's info-->
+				<div class="dealerCards">
+					<h3 id="dealer">Total:</h3>
+					<div class="Points">
+						<label id="lblDealerTotal">0</label>
+					</div>
+					<div class="cardContainer" id="dealerContainer">
+						<img id="imgDealerCard1" src="../assets/images/cards/card55.JPG" class="card">
+						<img id="imgDealerCard2" src="../assets/images/cards/card55.JPG" class="card">
+					</div>
+				</div>
+			</div>
+			<label id="lblResult"></label>
+			<!-- Button actions -->
+			<div class="buttons">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<input type="button" id="btnBet" value="BET" class="buttonA button">
+				<br>
+				<br>
+				<br>
+				<br>
+				<input type="button" id="btnDeal" value="DEAL" class="buttonD button" disabled>
+				<br>
+				<br>
+				<br>
+				<br>
+				<input type="button" id="btnHit" value="HIT" class="buttonD button" disabled>
+				<br>
+				<br>
+				<label id="lblx2"></label>
+				<br>
+				<br>
+				<input type="button" id="btnStay" value="STAY" class="buttonD button" disabled>
+				<br>
+				<br>
+				<br>
+				<br>
+				<input type="button" id="btnDouble" value="DOUBLE" class="buttonD button" disabled>
+			</div>
+			<!-- Code to display the player's cards-->
+			<br>
+			<br>
+			<br>
+			<!--Player's info-->
+			<div class="container2">
+				<label id="lblBet"></label>
+				<div class="playerCards">
+					<h1 id="player">Total:</h1>
+					<div class="Points">
+						<label id="lblPlayerTotal">0</label>
+					</div>
+					<div class="cardContainer" id="userContainer">
+						<img id="imgPlayerCard1" src="../assets/images/cards/card55.JPG" class="card">
+						<img id="imgPlayerCard2" src="../assets/images/cards/card55.JPG" class="card">
+					</div>
+				</div>
+			</div>
+			<!-- Displaying the players Balance -->
+			<ul class="playerInfo">
+				<li class="playerBalance">
+					<a id="playerBalance">
+						Balance: <label id="money">$100.00</label>
+					</a>
+				</li>
+				<!-- Box to input amount user will bet -->
+				<li class="playerBet">
+					<a id="playerBet">
+						Bet: <input type="text" value="0" id="betMoney" onkeypress="return isNumber(event)">
+					</a>
+				</li>
+				<!-- Button for playing music -->
+				<li style="float:right">
+					<button id="btnMusic">
+						<img src="../assets/images/muteImage.png" id="imgMusic">
+					</button>
+				</li>
+				<!-- Button for user settings -->
+				<li style="float:right">
+					<button id="btnSetting">
+						<img src="../assets/images/settings.jpg" id="imgMusic">
+					</button>
+				</li>
+				<!-- Displaying player name -->
+				<li style="float:right">
+					<label id="lblName">Player</label>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

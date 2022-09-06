@@ -1,0 +1,337 @@
+/*
+  Jason, Elben, Lily, Fahad
+  11/15/2019
+  Game Page Styles
+  These are the styles for our game page.
+*/
+body {
+  background-image: url("../assets/images/background.png");
+  background-size: 100%;
+  font-family: verdana;
+  color: black;
+}
+#btnBet {
+  display: none;
+}
+#divOverlay {
+  position: absolute;
+  background-color: rgba(1, 1, 1, 0.5);
+  width: 100%;
+  height: 100%;
+  margin-left: -0.4%;
+  z-index: 1;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-top: -5%;
+  display: none;
+}
+#lblName {
+  font-family: money;
+  color: white;
+  font-size: 3em;
+}
+#betMoney {
+  margin-left: auto;
+}
+#btnSetting, #btnMusic {
+  background-color: rgba(1, 1, 1, 0);
+  border-color: rgba(1, 1, 1, 0);
+}
+#divPlayAgain {
+  vertical-align:middle;
+  border-style: solid;
+  border-radius: 5px;
+  background-image: url("../assets/images/giphy.gif");
+  border-color: blue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 24%;
+  height: 25%;
+  text-align: center;
+  margin-top: 19%;
+  margin-bottom: auto;
+  display: none;
+}
+#divSettings {
+  vertical-align:middle;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: blue;
+  background-image: url(../assets/images/dice.jpg);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 24%;
+  height: 25%;
+  text-align: center;
+  margin-top: 19%;
+  margin-bottom: auto;
+  font-family: money;
+  display: none;
+}
+#h2Settings {
+  font-size: 2.5em;
+  color: #C6BEBC;
+  background-color: rgba(1, 1, 1, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#player, #dealer {
+  font-family: money;
+  width: 10%;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#btnPlayAgain {
+  vertical-align:middle;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:40%;
+  margin-bottom:0%;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+#btnNameEnt {
+  vertical-align:middle;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top: 2%;
+  margin-bottom:0%;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  opacity: 0.7;
+}
+#imgScare {
+  display: none;
+  height:100%;
+  width:100%;
+  margin-top: -4.8%;
+  margin-left: -0.4%;
+  position: fixed;
+  z-index: 1;
+}
+input[type=number] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=number]:focus {
+  border: 3px solid #555;
+}
+input[type=text] {
+  padding: 12px 20px;
+}
+#lblResult {
+  font-family: money;
+  font-size: 7em;
+  color: #bf2424;
+  margin-top: 2%;
+  display: none;
+  position: fixed;
+  background-color: rgba(1, 1, 1, 0.5);
+  left: 25%;
+  width: 50%;
+  text-align: center;
+  z-index: 1;
+}
+#title {
+  text-align: center;
+  color: #d4af37 ;
+  font-size:3em;
+  outline-color: 
+  background-image:linear-gradient(black,#d4af37,black);
+}
+h3{
+  text-align: center;
+}
+.cardContainer {
+  overflow: hidden;
+  margin-left: 0%;
+}
+.container2 {
+  margin-top: -280px;
+}
+.card {
+  margin-top: 2px;
+  margin-left: 1%;
+  width: 15%; 
+  height: 15%;
+}
+#btnMute {
+  width: 50px;
+  height: 50px;
+}
+.button {
+  background: #cb4e4e;
+  color: #fff;
+  width: 10%;
+  height: 50px;
+  box-shadow: 0 6px #ab3c3c;
+  -webkit-transition: none;
+  transition: none;
+  border-radius: 0 0 5px 5px;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  display: block;
+  margin: 15px 30px;
+  position: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+  float: right;
+  margin-top: -3%;
+}
+.button:hover {
+  box-shadow: 0 4px #ab3c3c;
+  top: 2px;
+}
+#imgMusic {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+#imgMusic:hover {
+  background-color: grey;
+}
+.button:active {
+  box-shadow: 0 0 #ab3c3c;
+  top: 6px;outline: none;
+}
+.buttons {
+  margin-top: -15%;
+  margin-left: -30%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.dealerCards, .playerCards {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 50%;
+}
+
+.buttonD {
+  cursor: not-allowed;
+  background-color: #6e1616;
+}
+.buttonA {
+  cursor: pointer;
+}
+#snow {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+}
+
+#lblx2 {
+  position: fixed;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  width: 50%;
+  left: 25%;
+  top: 54%;
+  color: red;
+  font-size: 1em;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  transition: all 0.3s;
+  -webkit-
+  text-shadow: 15px;
+}
+.lblx2Appear {
+  font-size: 4em;
+  opacity: 1;
+}
+@font-face {
+  font-family: money;
+  src: url('../assets/fonts/moneyFont.TTF');
+}
+#money {
+  font-family: money;
+  color: green;
+  font-size: 3em;
+}
+.Points {
+  width: 80px;
+  height: 25px;
+  background-color: white;
+  border-style: outset;
+  border-color: black;
+  color: black;
+  font-size: 20px;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: -15px;
+  opacity: 0.8;
+}
+#player {
+  text-align: left;
+}
+#dealer {
+  text-align: left;
+  font-size: 2em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 100px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#lblBet {
+  color: gold;
+  size: 10em;
+  display: block;
+  position: center;
+  margin-right: 50%;
+
+}

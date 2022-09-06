@@ -1,0 +1,145 @@
+<!-- 
+	Jason, Fahad, Elben and Lily
+	11/15/2019
+	Black Jack 
+	This page is for the instructions to explain how to play our game
+ -->
+<html>
+	<head>
+		<title> Instructions and Screenshots </title>
+		<link rel="stylesheet" type="text/css" href="../styles/styles2.css">
+		<link rel="icon" type="image/ico" href="../assets/images/icon.png" />
+	</head>
+	<body>
+		<!-- menu bar -->
+		<ul>
+			<li><a class="active" href="../index.html">Home</a></li>
+			<li style="float:right"><a href="">Resource</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">About</a>
+				<div class="dropdown-content">
+					<a href="description.html">Description</a>
+					<a href="rules.html">Rules</a>
+					<a href="instructionsAndScreenshots.html">Instructions/Screenshots</a>
+					<a href="documentation.html">Documentation</a>
+				</div>
+			</li>
+		</ul>
+		<div class="paragraph">
+			<h1 style="text-align: center;">Instructions/Screenshots</h1>
+			<br>
+			<!-- Screenshot of homepage -->
+			<img src="../assets/images/screenshots/screenshotHome.png" class="screenshots">
+			<h2> Homepage </h2>
+			<p>
+				This was the very first page you saw when you clicked on our webpage. On this page you can click play to play our game, read other information about the details of our game in about, view resources and turn on or off the music.
+			</p>
+			<br>
+			<!-- Screenshot of rules -->
+			<img src="../assets/images/screenshots/screenshotRules.png" class="screenshots">
+			<h2> Rules </h2>
+			<p>
+				On this page you can read up about all the rules on how to play Black Jack.
+			</p>
+			<br>
+			<!-- Screenshot of instructions and screenshots -->
+			<img src="../assets/images/screenshots/screenshotInstructionsAndScreenshots.png" class="screenshots">
+			<h2> Instructions and Screenshots</h2>
+			<p>
+				On this very page that you are currently viewing you can read up the instructions on how to play our game of Black Jack and how to navigate our website (with the help of screenshots).
+			</p>
+			<br>
+			<hr>
+			<!-- Screenshot of the game and explaining-->
+			<h2 style="text-align: center"> The Game</h2>
+			<br>
+			<img src="../assets/images/screenshots/screenshotGameBeginning.png" class="screenshots">
+			<h2> General Knowledge </h2>
+			<p>
+				This is what you will see when you choose to click play. On the bottom we have a bar where you can see your total balance, input a bet and turn on or off the music. To the right the player has buttons where they will be able to make their choices from. Finally a little off to the left side from the middle are the Dealer's point total and cards as well as the Player's point total and cards.
+			</p>
+			<br>
+			<!-- bet -->
+			<img src="../assets/images/screenshots/screenshotGameBet1.png" class="screenshots">
+			<h2> Betting </h2>
+			<p>
+				As you can see currently the bet button is not present. The bet button will only become visible once the user has placed a bet that is greater or equal to 1.
+			</p>
+			<br>
+			<img src="../assets/images/screenshots/screenshotGameBet2.png" class="screenshots">
+			<p>
+				Now that the bet has been placed the button has now appeared. Notice that the bet button is a lighter colour than the other buttons. This indicates that the bet button is the only button that is able to be clicked.
+			</p>
+			<br>
+			<!-- deal -->
+			<img src="../assets/images/screenshots/screenshotGameDeal.png" class="screenshots">
+			<h2> Dealing </h2>
+			<p>
+				Once the bet button has been pressed, the amount of money the player has bet will be subtracted off their balance. The deal button now becomes available. The bet button is no longer able to be pressed and the bet value can no longer be changed. 
+			</p>
+			<br>
+			<!-- choice -->
+			<img src="../assets/images/screenshots/screenshotGameChoice.png" class="screenshots">
+			<h2> Choice </h2>
+			<p>
+				Once the player has pressed the deal button the player's cards will be shown as well as their point total. Only one of the dealer's cards will be shown, that card being the greatest out of the two. The player then has a choice to "Hit", "Stay", or "Double". The deal button is also unable to be pressed.
+			</p>
+			<br>
+			<!-- hit -->
+			<img src="../assets/images/screenshots/screenshotGameHit.png" class="screenshots">
+			<h2> Hit </h2>
+			<p>
+				The player is able to click the hit button as many times as they like as long as their total points remain under or equal to 21 (otherwise the player loses due to bust). 
+			</p>
+			<br>
+			<!-- double -->
+			<img src="../assets/images/screenshots/screenshotGameDouble.png" class="screenshots">
+			<h2> Double </h2>
+			<p>
+				If the player is feeling confident they may choose to double their orginal bet. The player can only double their bet once.
+			</p>
+			<br>
+			<!-- stay (win) -->
+			<img src="../assets/images/screenshots/screenshotGameStayWin.png" class="screenshots">
+			<h2> Stay (win scenario) </h2>
+			<p>
+				When the player clicks stay the player will either win, lose or tie. If the player wins they recieve the amount that they had bet. 
+			</p>
+			<br>
+			<!-- stay (lose-->
+			<img src="../assets/images/screenshots/screenshotGameStayLose.png" class="screenshots">
+			<h2> Stay (lose scenario) </h2>
+			<p>
+				If the player loses they do not gain any money and do not get their bet money back. 
+			</p>
+			<br>
+			<!-- stay (tie-->
+			<img src="../assets/images/screenshots/screenshotGameStayTie.png" class="screenshots">
+			<h2> Stay (tie scenario) </h2>
+			<p>
+				If the player ties with the dealer then the player will recieve their bet money back.
+			</p>
+			<br>
+			<!-- player bust -->
+			<img src="../assets/images/screenshots/screenshotGameHitBust.png" class="screenshots">
+			<h2> Player Bust </h2>
+			<p>
+				The player losing by bust scenario is when the player clicks the hit button and it causes the player's point total to exceed 21. The player loses so they do not earn any money or get their bet money back.
+			</p>
+			<br>
+			<!-- dealer bust -->
+			<img src="../assets/images/screenshots/screenshotGameStayDealerBust.png" class="screenshots">
+			<h2> Dealer Bust </h2>
+			<p>
+				The dealer bust is when the player clicks stay and the dealer's point total exceeds 21 causing the player to win. The player will recieve the money they have won from their bet. 
+			</p>
+			<br>
+			<!-- Secret -->
+			<img src="../assets/images/screenshots/screenshotGameSecret.png" class="screenshots">
+			<h2> ??? </h2>
+			<p>
+				Up? Up? Down? Down? Left? Right? Left? Right? B? A?
+			</p>
+		</div>
+	</body>
+</html>
